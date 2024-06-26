@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <link rel="stylesheet" href="./src/sass/shopping-style.scss" />
+    <script type="module" src="./src/js/script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container">
+      <div class="heading-container">
+        <nav class="heading">
+          <div class="logo">
+            <a href="./home.html">
+              <img
+                src="./src/assets/img/logo (1).png"
+                alt="Restaurant Website"
+                width="185"
+                height="187"
+              />
+            </a>
+          </div>
+          <div class="items">
+            <ul>
+              <li>خانه</li>
+              <li>منو</li>
+              <li>ارتباط با ما</li>
+              <li class="phone">
+                <span>۰۹۱۱۲۳۴۵۶۷۸</span>
+                <img
+                  src="./src/assets/img/icons/call-shopping.svg"
+                  width="18"
+                  height="18"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="profile">
+            <div class="roundicon delivery">
+              <img src="./src/assets/img/icons/delivery.png" alt="" />
+            </div>
+            <div class="roundicon">
+              <img src="./src/assets/img/icons/trolly.png" alt="" />
+              <div class="number">
+                <span class="cart">۶</span>
+              </div>
+            </div>
+            <div class="roundicon">
+              <img src="./src/assets/img/icons/profile.png" alt="" />
+            </div>
+          </div>
+        </nav>
+
+        <div class="title">
+          <img
+            src="./src/assets/img/vector-right.png"
+            alt=""
+            height="40"
+            width="40"
+          />
+          <h2>سبد خرید</h2>
+          <img
+            src="./src/assets/img/vector-left.png"
+            alt=""
+            height="40"
+            width="40"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+    <main class="container-menu">
+      <div class="food-menu" id="food-container">
+        <div class="item burger">
+          <div class="titles">
+            <span>خرید شما</span>
+            <span class="gheimat">قیمت</span>
+            <span>جمع قیمت</span>
+            <span>تعداد</span>
+          </div>
+
+          <div class="container-pic">
+            <img
+              class="pic"
+              src="./src/assets/img/shopping-img/shopping-burger.png"
+              alt=""
+            />
+          </div>
+
+          <div class="content" id="burger-content">
+            <span class="title">چیزبرگر</span>
+            <span class="price price-margin">۲۳۲٬۰۰۰ت</span>
+            <span class="total">۴۶۴٬۰۰۰ت</span>
+            <div class="add-remove">
+              <div class="numbers">
+                <img
+                  class="minus"
+                  src="./src/assets/img/shopping-img/minus.svg"
+                  alt=""
+                />
+                <span class="quantity">0</span>
+                <img
+                  class="plus"
+                  src="./src/assets/img/shopping-img/plus.svg"
+                  alt=""
+                />
+              </div>
+              <img
+                class="delete"
+                src="./src/assets/img/shopping-img/delete.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="item pizza">
+          <div class="container-pic">
+            <img
+              class="pic"
+              src="./src/assets/img/shopping-img/shopping-pizza.png"
+              alt=""
+            />
+          </div>
+
+          <div class="content" id="pizza-content">
+            <span class="title">پیتزا مخصوص</span>
+            <span class="price">۲۴۰٬۰۰۰ت</span>
+            <span class="total">۱٬۲۰۰٬۰۰۰ت</span>
+            <div class="add-remove">
+              <div class="numbers">
+                <img
+                  class="minus"
+                  src="./src/assets/img/shopping-img/minus.svg"
+                  alt=""
+                />
+                <span class="quantity">0</span>
+                <img
+                  class="plus"
+                  src="./src/assets/img/shopping-img/plus.svg"
+                  alt=""
+                />
+              </div>
+              <img
+                class="delete"
+                src="./src/assets/img/shopping-img/delete.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="item fried">
+          <div class="container-pic">
+            <img
+              class="pic"
+              src="./src/assets/img/shopping-img/shopping-fried.png"
+              alt=""
+            />
+          </div>
+
+          <div class="content" id="fried-content">
+            <span class="title">سینی سوخاری</span>
+            <span class="price">۳۰۰٬۰۰۰ت</span>
+            <span class="total">۹۰۰٬۰۰۰ت</span>
+            <div class="add-remove">
+              <div class="numbers">
+                <img
+                  class="minus"
+                  src="./src/assets/img/shopping-img/minus.svg"
+                  alt=""
+                />
+                <span class="quantity">0</span>
+                <img
+                  class="plus"
+                  src="./src/assets/img/shopping-img/plus.svg"
+                  alt=""
+                />
+              </div>
+              <img
+                class="delete"
+                src="./src/assets/img/shopping-img/delete.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="item sandwich">
+          <div class="container-pic">
+            <img
+              class="pic"
+              src="./src/assets/img/shopping-img/shopping-sandwich.png"
+              alt=""
+            />
+          </div>
+
+          <div class="content" id="sandwich-content">
+            <span class="title">هات داگ</span>
+            <span class="price price-margin">۲۰۰٬۰۰۰ت</span>
+            <span class="total">۲۰۰٬۰۰۰ت</span>
+            <div class="add-remove">
+              <div class="numbers">
+                <img
+                  class="minus"
+                  src="./src/assets/img/shopping-img/minus.svg"
+                  alt=""
+                />
+                <span class="quantity">0</span>
+                <img
+                  class="plus"
+                  src="./src/assets/img/shopping-img/plus.svg"
+                  alt=""
+                />
+              </div>
+              <img
+                class="delete"
+                src="./src/assets/img/shopping-img/delete.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="item cola">
+          <div class="container-pic">
+            <img
+              class="pic"
+              src="./src/assets/img/shopping-img/shopping-cola.png"
+              alt=""
+            />
+          </div>
+
+          <div class="content" id="cola-content">
+            <span class="title">کوکا کولا</span>
+            <span class="price price-margin">۳۰٬۰۰۰ت</span>
+            <span class="total">۳۰۰٬۰۰۰ت</span>
+            <div class="add-remove">
+              <div class="numbers">
+                <img
+                  class="minus"
+                  src="./src/assets/img/shopping-img/minus.svg"
+                  alt=""
+                />
+                <span class="quantity">0</span>
+                <img
+                  class="plus"
+                  src="./src/assets/img/shopping-img/plus.svg"
+                  alt=""
+                />
+              </div>
+              <img
+                class="delete"
+                src="./src/assets/img/shopping-img/delete.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="item lemonad">
+          <div class="container-pic">
+            <img
+              class="pic"
+              src="./src/assets/img/shopping-img/shopping-lemonad.png"
+              alt=""
+            />
+          </div>
+
+          <div class="content" id="lemonad-content">
+            <span class="title">لیموناد</span>
+            <span class="price price-margin">۴۰٬۰۰۰ت</span>
+            <span class="total">۱۶۰٬۰۰۰ت</span>
+            <div class="add-remove">
+              <div class="numbers">
+                <img
+                  class="minus"
+                  src="./src/assets/img/shopping-img/minus.svg"
+                  alt=""
+                />
+                <span class="quantity">0</span>
+                <img
+                  class="plus"
+                  src="./src/assets/img/shopping-img/plus.svg"
+                  alt=""
+                />
+              </div>
+              <img
+                class="delete"
+                src="./src/assets/img/shopping-img/delete.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="payment">
+        <div class="customer-details">
+          <div class="details">
+            <h3>اطلاعات مشتری</h3>
+            <img src="./src/assets/img/edit.svg" alt="" />
+          </div>
+          <div class="con">
+            <div class="full-name">
+              <span class="name">اسم کامل</span>
+              <span class="henry">هنری جان</span>
+            </div>
+            <div class="phone-number">
+              <span class="phone">شماره تماس</span>
+              <span class="number">۰۹۱۱۸۷۶۵۴۳۲</span>
+            </div>
+          </div>
+          <div class="address">
+            <h3>نشانی تحویل</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+        </div>
+        <div class="total">
+          <div class="total-price">
+            <span>جمع قیمت کل</span>
+            <span id="totalprice">۳٬۲۲۴٬۰۰۰ ت</span>
+          </div>
+          <div class="total-price2">
+            <span>جمع قیمت</span>
+            <span>۳٬۲۲۴٬۰۰۰ ت</span>
+          </div>
+          <div class="send-price">
+            <span>قیمت ارسال</span>
+            <span>۰ ت</span>
+          </div>
+        </div>
+        <div class="payment-details">
+          <span class="detail-paying">جزئیات پرداخت</span>
+          <p class="prefer">چه روش پرداختی را ترجیح می دهید؟</p>
+          <div class="pay-place">
+            <span>پرداخت در محل</span>
+            <img src="./src/assets/img/checkbox.svg" alt="" />
+          </div>
+          <p class="dargah">پرداخت آنلاین از یکی از درگاه های زیر:</p>
+          <div class="banks-dargah">
+            <a href="#"><img src="./src/assets/img/mellat.png" alt="" /></a>
+            <a href="#"><img src="./src/assets/img/psargad.png" alt="" /></a>
+            <a href="#"><img src="./src/assets/img/meli.png" alt="" /></a>
+          </div>
+        </div>
+        <button>مرحله بعد</button>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="container-footer">
+        <div class="about-us">
+          <img class="logo" src="./src/assets/img/footer-logo.png" alt="" />
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است.
+          </p>
+          <div>
+            <a href="#"
+              ><img src="./src/assets/img/insragram-logo.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./src/assets/img/linkedin-logo.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./src/assets/img/twitter-logo.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./src/assets/img/facebook-logo.svg" alt=""
+            /></a>
+          </div>
+        </div>
+
+        <div class="work-hour">
+          <h3>ساعت کار رستوران</h3>
+          <div class="p">
+            <p>شنبه تا پنجشنبه <br />ساعت 12 ظهر تا 12 شب</p>
+            <p>جمعه<br />ساعت 1 ظهر تا 1 شب</p>
+          </div>
+        </div>
+
+        <div class="links">
+          <h3>لینک کاربر</h3>
+          <div class="link-items">
+            <a href="#">خانه</a>
+            <a href="#">منو</a>
+            <a href="#">ارتباط با ما</a>
+          </div>
+        </div>
+
+        <div class="contact-us">
+          <h3>ارتباط با ما</h3>
+          <p class="paragraph">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است.
+          </p>
+          <p class="number">۰۹۱۱۲۳۴۵۶۷۸</p>
+          <div class="contact-email">
+            <input type="email" placeholder="ایمیل خود را تایپ کنید....." />
+            <a href="#"><img src="./src/assets/img/email-vector.svg" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

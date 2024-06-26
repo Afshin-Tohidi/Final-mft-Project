@@ -1,0 +1,623 @@
+@font-face {
+  font-family: vazirmatn;
+  src: url("Vazirmatn-Thin.b44668e3.woff2") format("woff2");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: vazirmatn;
+  src: url("Vazirmatn-ExtraLight.029388e7.woff2") format("woff2");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: vazirmatn;
+  src: url("Vazirmatn-Light.e1e3b56c.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: vazirmatn;
+  src: url("Vazirmatn-Regular.df5ae4f4.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: vazirmatn;
+  src: url("Vazirmatn-Medium.3a77eb48.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: vazirmatn;
+  src: url("Vazirmatn-SemiBold.b0b26bea.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: vazirmatn;
+  src: url("Vazirmatn-Bold.5772b1ba.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: vazirmatn;
+  src: url("Vazirmatn-ExtraBold.3f23c189.woff2") format("woff2");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: vazirmatn;
+  src: url("Vazirmatn-Black.1d713ca3.woff2") format("woff2");
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  font-family: vazirmatn;
+}
+
+body {
+  background-color: #ffecd2;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 79px 0 80px;
+}
+
+.container .heading-container {
+  width: 100%;
+  position: relative;
+}
+
+.container .heading {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.container .heading .items ul {
+  gap: 50px;
+  list-style-type: none;
+  display: flex;
+}
+
+.container .heading .items ul li {
+  color: #e04218;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container .heading .items .phone {
+  color: #fe9d26;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.container .profile {
+  gap: 7px;
+  display: flex;
+}
+
+.container .profile .roundicon {
+  cursor: pointer;
+  background-color: #e04218;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  display: flex;
+  position: relative;
+}
+
+.container .profile .roundicon .number {
+  background-color: #fff;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 32px;
+}
+
+.container .profile .roundicon .number span {
+  color: #fe9d26;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.container .profile .delivery {
+  background-color: #f6f6f6;
+  overflow: hidden;
+}
+
+.container .title {
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  padding-top: 130px;
+  display: flex;
+}
+
+.container .title h2 {
+  color: #e04218;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.container-menu {
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 79px;
+  padding-right: 79px;
+  display: flex;
+}
+
+.container-menu .food-menu {
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 90px;
+  display: flex;
+}
+
+.container-menu .food-menu .item2 {
+  align-items: center;
+  width: 762px;
+  display: flex;
+  position: relative;
+}
+
+.container-menu .food-menu .item2 .titles {
+  color: #fe9d26;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  margin-right: 110px;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  position: absolute;
+}
+
+.container-menu .food-menu .item2 .titles span {
+  color: #fe9d26;
+}
+
+.container-menu .food-menu .item {
+  background-color: #fff;
+  border-radius: 40px;
+  align-items: center;
+  gap: 55px;
+  width: 762px;
+  height: 120px;
+  display: flex;
+  position: relative;
+}
+
+.container-menu .food-menu .item .titles {
+  color: #fe9d26;
+  align-items: center;
+  gap: 100px;
+  display: flex;
+  position: absolute;
+  bottom: 125px;
+  right: 110px;
+}
+
+.container-menu .food-menu .item .titles .gheimat {
+  margin-right: 20px;
+}
+
+.container-menu .food-menu .item .titles span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container-menu .food-menu .item #burger-content {
+  margin-right: 35px;
+}
+
+.container-menu .food-menu .item #fried-content {
+  margin-right: 10px;
+}
+
+.container-menu .food-menu .item #sandwich-content, .container-menu .food-menu .item #cola-content {
+  margin-right: 40px;
+}
+
+.container-menu .food-menu .item #lemonad-content {
+  margin-right: 60px;
+}
+
+.container-menu .food-menu .item .content {
+  gap: 70px;
+  display: flex;
+  position: absolute;
+  right: 80px;
+}
+
+.container-menu .food-menu .item .container-pic {
+  position: relative;
+  top: 3px;
+  left: 90px;
+}
+
+.container-menu .food-menu .item .title {
+  color: #fe9d26;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.container-menu .food-menu .item .price {
+  text-align: right;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.container-menu .food-menu .item .total {
+  text-align: right;
+  color: #e04218;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.container-menu .food-menu .item .add-remove {
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.container-menu .food-menu .item .add-remove .numbers {
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  display: flex;
+}
+
+.container-menu .food-menu .item .add-remove .numbers span {
+  text-align: center;
+  color: #fe9d26;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container-menu .payment {
+  flex-direction: column;
+  gap: 22px;
+  display: flex;
+}
+
+.container-menu .payment .customer-details {
+  background-color: #fff;
+  border-radius: 40px;
+  width: 464px;
+  height: 358px;
+  padding: 35px;
+}
+
+.container-menu .payment .customer-details .details {
+  gap: 168px;
+  display: flex;
+}
+
+.container-menu .payment .customer-details .details h3 {
+  color: #e04218;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container-menu .payment .customer-details .con {
+  align-items: center;
+  gap: 160px;
+  margin-top: 18px;
+  display: flex;
+}
+
+.container-menu .payment .customer-details .con .full-name {
+  flex-direction: column;
+  display: flex;
+}
+
+.container-menu .payment .customer-details .con .full-name .name {
+  color: #fe9d26;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.container-menu .payment .customer-details .con .full-name .henry {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.container-menu .payment .customer-details .phone-number {
+  flex-direction: column;
+  display: flex;
+}
+
+.container-menu .payment .customer-details .phone-number .phone {
+  color: #fe9d26;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.container-menu .payment .customer-details .phone-number .number {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.container-menu .payment .customer-details .address {
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 34px;
+  display: flex;
+}
+
+.container-menu .payment .customer-details .address h3 {
+  color: #e04218;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container-menu .payment .customer-details .address p {
+  text-align: justified;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31.25px;
+}
+
+.container-menu .payment .total {
+  background-color: #fff;
+  border-radius: 40px;
+  flex-direction: column;
+  gap: 22px;
+  width: 464px;
+  height: 224px;
+  padding: 31px 35px;
+  display: flex;
+}
+
+.container-menu .payment .total .total-price {
+  align-items: center;
+  gap: 117px;
+  display: flex;
+}
+
+.container-menu .payment .total .total-price :first-child {
+  color: #e04218;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container-menu .payment .total .total-price :last-child {
+  color: #fe9d26;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.container-menu .payment .total .total-price2 {
+  align-items: center;
+  gap: 136px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.container-menu .payment .total .total-price2 :first-child, .container-menu .payment .total .total-price2 :last-child {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.container-menu .payment .total .send-price {
+  align-items: center;
+  gap: 216px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.container-menu .payment .total .send-price :first-child, .container-menu .payment .total .send-price :last-child {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.container-menu .payment .payment-details {
+  background-color: #fff;
+  border-radius: 40px;
+  flex-direction: column;
+  gap: 20px;
+  width: 464px;
+  height: 344px;
+  padding: 26px 23px;
+  display: flex;
+}
+
+.container-menu .payment .payment-details .detail-paying {
+  color: #e04218;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container-menu .payment .payment-details .prefer {
+  padding-right: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container-menu .payment .payment-details .pay-place {
+  align-items: center;
+  gap: 20px;
+  padding-right: 32px;
+  display: flex;
+}
+
+.container-menu .payment .payment-details .pay-place span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container-menu .payment .payment-details .dargah {
+  padding-right: 32px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container-menu .payment .payment-details .banks-dargah {
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  display: flex;
+}
+
+.container-menu .payment button {
+  color: #fff;
+  background-color: #fe9d26;
+  border: none;
+  border-radius: 15px;
+  width: 432.94px;
+  height: 72px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.container-footer {
+  background-color: #ffecd2;
+  height: 321px;
+  padding: 60px 105px;
+  display: flex;
+}
+
+.container-footer .about-us .logo {
+  margin-top: 18px;
+}
+
+.container-footer .about-us p {
+  color: #a0a0a0;
+  width: 334px;
+  height: 108px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container-footer .work-hour {
+  margin-right: 111px;
+}
+
+.container-footer .work-hour h3 {
+  color: #f03153;
+  width: 285.26px;
+  height: 32.37px;
+  margin-top: 72px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.container-footer .work-hour .p {
+  text-align: justified;
+  color: #a0a0a0;
+  flex-direction: column;
+  gap: 20px;
+  width: 239px;
+  height: 129px;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  display: flex;
+}
+
+.container-footer .links {
+  margin-right: 36px;
+}
+
+.container-footer .links h3 {
+  color: #f03153;
+  width: 111px;
+  height: 24px;
+  margin-top: 72px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.container-footer .links .link-items {
+  flex-direction: column;
+  margin-top: 20px;
+  display: flex;
+}
+
+.container-footer .links .link-items a {
+  text-align: justified;
+  color: #a0a0a0;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.container-footer .contact-us {
+  margin-right: 150px;
+}
+
+.container-footer .contact-us h3 {
+  color: #f03153;
+  width: 140px;
+  height: 24px;
+  margin-top: 72px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.container-footer .contact-us .paragraph {
+  text-align: justified;
+  color: #a0a0a0;
+  width: 184px;
+  height: 66px;
+  margin-top: 22px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20.31px;
+}
+
+.container-footer .contact-us .number {
+  color: #b6b6b6;
+  width: 119px;
+  height: 16px;
+  margin-right: 80px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-footer .contact-us .contact-email {
+  margin-top: 25px;
+  position: relative;
+}
+
+.container-footer .contact-us .contact-email input {
+  border: none;
+  border-radius: 32.5px;
+  width: 189px;
+  height: 44px;
+  padding: 10px;
+}
+
+.container-footer .contact-us .contact-email a {
+  position: absolute;
+  top: 7px;
+  left: 14px;
+}
+/*# sourceMappingURL=shopping.ec73ddee.css.map */

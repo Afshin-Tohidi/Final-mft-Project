@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/sass/style.scss" />
+    <script type="module" src="./src/js/home.js"></script>
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container">
+      <div class="heading-container">
+        <nav class="heading">
+          <div class="logo">
+            <a href="./home.html">
+              <img
+                src="./src/assets/img/logo (1).png"
+                alt="Restaurant Website"
+                width="185"
+                height="187"
+              />
+            </a>
+          </div>
+          <div class="items">
+            <ul>
+              <li>خانه</li>
+              <li>منو</li>
+              <li>ارتباط با ما</li>
+              <li class="phone">
+                <span>۰۹۱۱۲۳۴۵۶۷۸</span>
+                <img
+                  src="./src/assets/img/icons/call.svg"
+                  width="18"
+                  height="18"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="profile">
+            <div class="roundicon delivery">
+              <img src="./src/assets/img/icons/delivery.png" alt="" />
+            </div>
+            <div class="roundicon">
+              <img src="./src/assets/img/icons/trolly.png" alt="" />
+              <div class="number">
+                <span>۶</span>
+              </div>
+            </div>
+            <div class="roundicon">
+              <img src="./src/assets/img/icons/trolly.png" alt="" />
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="container">
+        <div class="burger-container">
+          <div class="burger">
+            <img
+              src="./src/assets/img/pic burger.png"
+              width="624"
+              height="427"
+            />
+          </div>
+        </div>
+        <div class="text-container">
+          <div class="text">
+            <img src="./src/assets/img/text.png" width="496" height="226" />
+          </div>
+          <div class="order-container">
+            <a href="./shopping.html" target="_blank" class="order">سفارش</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper">
+        <img src="./src/assets/img/icons/next-icon.svg" alt="" />
+      </div>
+    </section>
+    <!-- menu -->
+    <section class="menu">
+      <div class="container">
+        <div class="header">
+          <img
+            src="./src/assets/img/vector-right.png"
+            alt=""
+            height="40"
+            width="40"
+          />
+          <h2>منو</h2>
+          <img
+            src="./src/assets/img/vector-left.png"
+            alt=""
+            height="40"
+            width="40"
+          />
+        </div>
+        <div class="menu-list">
+          <div class="tab burger" data-category="Burgers">برگر</div>
+          <div class="tab pizza" data-category="Pizzas">پیتزا</div>
+          <div class="tab fried" data-category="Fried">سوخاری</div>
+          <div class="tab sandwich" data-category="Sandwich">ساندویچ</div>
+          <div class="tab drink" data-category="Drinks">نوشیدنی</div>
+        </div>
+        <div class="container-cards">
+          <div class="food-cards" id="food-cards">
+            <!-- <div class="card-items">
+              <div id="burger-img">
+                <img src="./src/assets/img/hamburger.png" alt="" />
+              </div>
+
+              <div class="content">
+                <h2>همبرگر</h2>
+                <p>
+                  ۱۵۰ گرم گوشت چرخ کرده، پیاز، کاهو، گوجه، خیارشور، سس مخصوص.
+                </p>
+
+                <div class="price-btn">
+                  <span class="price">۱۹۰٬۰۰۰ ت</span>
+                  <img src="./src/assets/img/shopping-btn.svg" alt="" />
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="card-items">
+              <div id="cheese-img">
+                <img src="./src/assets/img/cheese-burger.png" alt="" />
+              </div>
+
+              <div class="content">
+                <h2>چیزبرگر</h2>
+                <p>
+                  ۱۵۰ گرم گوشت چرخ کرده، پنیرگودا، پیاز، کاهو، گوجه، خیارشور، سس
+                  مخصوص.
+                </p>
+                <div class="price-btn">
+                  <span class="price">۲۳۲٬۰۰۰ ت</span>
+                  <img src="./src/assets/img/shopping-btn.svg" alt="" />
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="card-items">
+              <div id="doubleCheese-img">
+                <img src="./src/assets/img/doubleCheese-burger.png" alt="" />
+              </div>
+
+              <div class="content">
+                <h2>دبل چیز برگر</h2>
+                <p>
+                  ۳۰۰ گرم گوشت چرخ کرده، پنیرگودا، پیاز، کاهو، گوجه، خیارشور، سس
+                  مخصوص.
+                </p>
+                <div class="price-btn">
+                  <span class="price">۳۸۰٬۰۰۰ ت</span>
+                  <img src="./src/assets/img/shopping-btn.svg" alt="" />
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="card-items">
+              <div id="fried-img">
+                <img src="./src/assets/img/fried-burger.png" alt="" />
+              </div>
+
+              <div class="content">
+                <h2>سوخاری برگر</h2>
+                <p>
+                  ۱۵۰ گرم سینه مرغ مزه دار شده سوخاری، پنیرگودا، پیاز، کاهو،
+                  گوجه، خیارشور، سس مخصوص.
+                </p>
+                <div class="price-btn">
+                  <span class="price">۱۵۰٬۰۰۰ ت</span>
+                  <img src="./src/assets/img/shopping-btn.svg" alt="" />
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="card-items">
+              <div id="beacon-img">
+                <img src="./src/assets/img/beacon-burger.png" alt="" />
+              </div>
+
+              <div class="content">
+                <h2>بیکن برگر</h2>
+                <p>
+                  ۱۵۰ گرم گوشت چرخ کرده، بیکن، پنیرگودا، پیاز، کاهو، گوجه،
+                  خیارشور، سس مخصوص.
+                </p>
+                <div class="price-btn">
+                  <span class="price">۳۰۰٬۰۰۰ ت</span>
+                  <img src="./src/assets/img/shopping-btn.svg" alt="" />
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="card-items">
+              <div id="mushroom-img">
+                <img src="./src/assets/img/mushroom-burger.png" alt="" />
+              </div>
+
+              <div class="content">
+                <h2>ماشروم برگر</h2>
+                <p>
+                  ۱۵۰ گرم گوشت چرخ کرده، قارچ، پیاز، کاهو، گوجه، خیارشور، سس
+                  مخصوص.
+                </p>
+                <div class="price-btn">
+                  <span class="price">۲۴۵٬۰۰۰ ت</span>
+                  <img src="./src/assets/img/shopping-btn.svg" alt="" />
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Comments -->
+    <section class="comments">
+      <div class="header">
+        <img
+          src="./src/assets/img/vector-right.png"
+          alt=""
+          height="40"
+          width="40"
+        />
+        <h2>نظرات</h2>
+        <img
+          src="./src/assets/img/vector-left.png"
+          alt=""
+          height="40"
+          width="40"
+        />
+      </div>
+      <div class="comment-container">
+        <div class="container-card">
+          <div class="comment-card">
+            <img
+              class="profile-pic"
+              src="./src/assets/img/profile-comment.png"
+              width="150"
+              height="150"
+              alt=""
+            />
+            <h3>هنری جان</h3>
+            <div class="arrows">
+              <img
+                class="right"
+                src="./src/assets/img/right-arrow.svg"
+                alt=""
+              />
+              <img class="left" src="./src/assets/img/left-arrow.svg" alt="" />
+            </div>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+              جامعه و متخصصان را می طلبد،
+            </p>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="./src/assets/img/comment-img.png"
+            width="650"
+            height="400"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- subscription -->
+    <section class="subscription">
+      <div class="sub-container">
+        <div class="img-container">
+          <img src="./src/assets/img/sub-img.png" alt="" />
+        </div>
+
+        <div class="sub-details">
+          <div class="content">
+            <h3>عضو شدن در خبرنامه ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است،
+            </p>
+          </div>
+          <div class="email">
+            <input type="email" placeholder="ایمیل خود را تایپ کنید......" />
+            <button>عضو شدن</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container-footer">
+        <div class="about-us">
+          <img class="logo" src="./src/assets/img/footer-logo.png" alt="" />
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است.
+          </p>
+          <div>
+            <a href="#"
+              ><img src="./src/assets/img/insragram-logo.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./src/assets/img/linkedin-logo.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./src/assets/img/twitter-logo.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./src/assets/img/facebook-logo.svg" alt=""
+            /></a>
+          </div>
+        </div>
+
+        <div class="work-hour">
+          <h3>ساعت کار رستوران</h3>
+          <div class="p">
+            <p>شنبه تا پنجشنبه <br />ساعت 12 ظهر تا 12 شب</p>
+            <p>جمعه<br />ساعت 1 ظهر تا 1 شب</p>
+          </div>
+        </div>
+
+        <div class="links">
+          <h3>لینک کاربر</h3>
+          <div class="link-items">
+            <a href="#">خانه</a>
+            <a href="#">منو</a>
+            <a href="#">ارتباط با ما</a>
+          </div>
+        </div>
+
+        <div class="contact-us">
+          <h3>ارتباط با ما</h3>
+          <p class="paragraph">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است.
+          </p>
+          <p class="number">۰۹۱۱۲۳۴۵۶۷۸</p>
+          <div class="contact-email">
+            <input type="email" placeholder="ایمیل خود را تایپ کنید....." />
+            <a href="#"><img src="./src/assets/img/email-vector.svg" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

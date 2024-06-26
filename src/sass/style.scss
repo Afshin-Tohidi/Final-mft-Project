@@ -1,0 +1,546 @@
+@import "./fonts";
+@import "./colors";
+* {
+  font-family: "vazirmatn";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 79px 0 80px;
+
+  .heading-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .heading {
+    position: absolute;
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .items {
+      ul {
+        display: flex;
+        list-style-type: none;
+        gap: 50px;
+        li {
+          color: $text-color;
+          font-weight: 600;
+          font-size: 20;
+        }
+      }
+      .phone {
+        display: flex;
+        color: #fff;
+        align-items: center;
+        gap: 8px;
+        z-index: 2;
+      }
+    }
+  }
+  .profile {
+    z-index: 2;
+    display: flex;
+    gap: 7px;
+    .roundicon {
+      position: relative;
+      width: 47px;
+      height: 47px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // overflow: hidden;
+      background-color: $icon-bg;
+      cursor: pointer;
+
+      .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 32px;
+        bottom: 30px;
+        background-color: #fff;
+        width: 17px;
+        height: 17px;
+        border-radius: 20px;
+
+        span {
+          font-size: 15px;
+          font-weight: 600;
+          color: $primary-color;
+        }
+      }
+    }
+    .delivery {
+      background-color: $icon-bg-white;
+      overflow: hidden;
+    }
+  }
+}
+
+.showcase {
+  position: relative;
+  background-image: url("../assets/img/bg-element.png");
+  background-repeat: no-repeat;
+  background-size: 46%;
+  height: 800px;
+
+  .swiper {
+    position: absolute;
+    right: 680px;
+    top: 760px;
+  }
+
+  .burger-container {
+    position: relative;
+
+    .burger {
+      position: absolute;
+      top: 200px;
+      left: 200px;
+    }
+  }
+
+  .text-container {
+    position: relative;
+
+    .text {
+      position: absolute;
+      top: 316px;
+      right: -30px;
+    }
+    .order-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-color: #fe9d2614;
+      width: 146px;
+      height: 71px;
+      top: 560px;
+      right: 130px;
+      border-radius: 10px;
+
+      .order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 117px;
+        height: 45px;
+        color: #ffff;
+        font-size: 20px;
+        font-weight: 900;
+        background-color: #fe9d26;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.menu {
+  max-width: 1440px;
+  background-color: $menu-bg;
+  padding: 32px 0;
+  margin: auto;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+
+    h2 {
+      color: $text-color;
+      font-size: 55px;
+      font-weight: 600;
+    }
+  }
+  .menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+    margin-top: 53px;
+
+    .tab {
+      font-size: 26px;
+      font-weight: 900;
+      color: $text-color;
+      width: 160px;
+      height: 60px;
+      border-radius: 10px;
+      text-align: center;
+      padding: 10px;
+      background-color: #f799254d;
+      cursor: pointer;
+    }
+    .tab:hover {
+      background-color: #fe9d26;
+      color: #fff;
+    }
+  }
+}
+.container-cards {
+  max-width: 1440px;
+  padding: 68px 45px;
+  .food-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 0;
+
+    .card-items {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 363px;
+      height: 212.76px;
+      border-radius: 40px;
+      background-color: #ffffff;
+      text-align: center;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 204.45px;
+        height: 180.55px;
+        text-align: center;
+
+        h2 {
+          color: $primary-color;
+          font-size: 24px;
+          font-weight: 900;
+          text-align: center;
+        }
+        p {
+          width: 100%;
+          font-size: 15px;
+          font-weight: 400;
+          margin-right: 60px;
+          text-align: justify;
+        }
+
+        .price-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          margin-left: -160px;
+
+          .price {
+            font-size: 20px;
+            font-weight: 900;
+            color: $price-color;
+          }
+          img {
+            height: 30px;
+            &:hover {
+              background-color: $primary-color;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+    .Burgers {
+      .burger-img img {
+        position: absolute;
+        right: -70px;
+        top: 45px;
+      }
+    }
+    .Pizzas {
+      .burger-img img {
+        position: absolute;
+        right: -60px;
+        top: 30px;
+      }
+    }
+    .Drinks {
+      .burger-img img {
+        position: absolute;
+        right: -24px;
+        top: 10px;
+      }
+    }
+  }
+}
+
+// Comments
+.comments {
+  margin: auto;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 40px 0;
+
+    h2 {
+      color: $text-color;
+      font-size: 55px;
+      font-weight: 600;
+    }
+  }
+
+  .comment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 0 70px;
+  }
+
+  .container-card {
+    box-shadow: 0px 0px 50px 0px #0000001a;
+    border-radius: 35px;
+
+    .comment-card {
+      position: relative;
+      .profile-pic {
+        display: block;
+        margin: 17px auto;
+      }
+      h3 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: $primary-color;
+      }
+      p {
+        padding: 14px 30px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21.88px;
+        text-align: justified;
+      }
+      .arrows {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        transform: translate(0, -50%);
+
+        .right {
+          height: 100px;
+          position: absolute;
+          right: 0;
+          cursor: pointer;
+        }
+        .left {
+          height: 100px;
+          position: absolute;
+          left: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// Subscription
+.subscription {
+  padding: 135px 75px;
+  .sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 183px;
+    height: 369px;
+    border-radius: 50px;
+    background-color: $primary-color;
+
+    .sub-details {
+      display: flex;
+      flex-direction: column;
+      // height: 369px;
+      gap: 46px;
+      padding: 38px 0;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h3 {
+          font-size: 40px;
+          font-weight: 800;
+          line-height: 62.5px;
+          color: #fff;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 25px;
+          text-align: justified;
+          width: 430px;
+        }
+      }
+
+      .email {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        // width: 432.94px;
+        // height: 72px;
+
+        input {
+          width: 432.94px;
+          height: 72px;
+          border-radius: 15px;
+          border: none;
+          padding: 15px;
+          font-family: "Montserrat";
+          font-size: 18px;
+          font-weight: 500;
+          color: #00000099;
+        }
+        button {
+          position: absolute;
+          left: 10px;
+          top: 10px;
+          border-radius: 10px;
+          background-color: #f48e28;
+          color: #fff;
+          width: 122px;
+          height: 50px;
+          border: none;
+          font-size: 20px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+// footer
+.container-footer {
+  padding: 0 105px;
+  background-color: $menu-bg;
+  display: flex;
+  height: 321px;
+
+  .about-us {
+    .logo {
+      margin-top: 18px;
+    }
+    p {
+      width: 334px;
+      height: 108px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #a0a0a0;
+    }
+  }
+
+  .work-hour {
+    margin-right: 111px;
+    h3 {
+      color: $price-color;
+      font-size: 26px;
+      font-weight: 700;
+      width: 285.26px;
+      margin-top: 72px;
+      height: 32.37px;
+    }
+    .p {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 18px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: justified;
+      width: 239px;
+      height: 129px;
+      color: #a0a0a0;
+    }
+  }
+
+  .links {
+    h3 {
+      width: 111px;
+      height: 24px;
+      color: $price-color;
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 72px;
+    }
+
+    .link-items {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: justified;
+        color: #a0a0a0;
+      }
+    }
+  }
+
+  .contact-us {
+    margin-right: 150px;
+    h3 {
+      width: 140px;
+      height: 24px;
+      font-size: 26px;
+      font-weight: 700;
+      color: $price-color;
+      margin-top: 72px;
+    }
+    .paragraph {
+      margin-top: 22px;
+      width: 184px;
+      height: 66px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 20.31px;
+      text-align: justified;
+      color: #a0a0a0;
+    }
+    .number {
+      width: 119px;
+      height: 16px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #b6b6b6;
+      margin-right: 80px;
+    }
+    .contact-email {
+      position: relative;
+      margin-top: 25px;
+      input {
+        border-radius: 32.5px;
+        border: none;
+        width: 189px;
+        height: 44px;
+        padding: 10px;
+      }
+      a {
+        position: absolute;
+        left: 14px;
+        top: 7px;
+      }
+    }
+  }
+}
